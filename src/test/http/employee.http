@@ -1,0 +1,43 @@
+GET http://localhost:8080/employees
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/employees/1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST  http://localhost:8080/employees
+Accept: */*
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "name": "Shivantha Huruggamuwa",
+  "role": "test"
+}
+
+###
+
+PUT  http://localhost:8080/employees/3
+Accept: */*
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "name": "Shivantha Huruggamuwa",
+  "role": "test1"
+}
+
+###
+
+
+DELETE  http://localhost:8080/employees/3
+Accept: */*
+Cache-Control: no-cache
+
+###
+
